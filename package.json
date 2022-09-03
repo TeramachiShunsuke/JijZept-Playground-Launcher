@@ -1,15 +1,15 @@
 {
-  "name": "@jlab-enhanced/launcher",
-  "version": "3.2.0",
+  "name": "@jijzept-playground/launcher",
+  "version": "1.0.0",
   "description": "A enhanced launcher for JupyterLab",
   "keywords": [
     "jupyter",
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/jupyterlab-contrib/jlab-enhanced-launcher",
+  "homepage": "https://github.com/TeramachiShunsuke/JijZept-Playground-Launcher",
   "bugs": {
-    "url": "https://github.com/jupyterlab-contrib/jlab-enhanced-launcher/issues"
+    "url": "https://github.com/TeramachiShunsuke/JijZept-Playground-Launcher/issues"
   },
   "license": "BSD-3-Clause",
   "author": "Frederic COLLONVAL",
@@ -24,7 +24,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jupyterlab-contrib/jlab-enhanced-launcher.git"
+    "url": "https://github.com/TeramachiShunsuke/JijZept-Playground-Launcher.git"
   },
   "scripts": {
     "build": "jlpm run build:lib && jlpm run build:labextension:dev",
@@ -34,7 +34,7 @@
     "build:prod": "jlpm run build:lib && jlpm run build:labextension",
     "clean": "jlpm run clean:lib",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
-    "clean:labextension": "rimraf jlab_enhanced_launcher/labextension",
+    "clean:labextension": "rimraf jijzept_playground_launcher/labextension",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
     "eslint": "eslint . --ext .ts,.tsx --fix",
     "eslint:check": "eslint . --ext .ts,.tsx",
@@ -83,7 +83,7 @@
     "disabledExtensions": [
       "@jupyterlab/launcher-extension"
     ],
-    "outputDir": "jlab_enhanced_launcher/labextension",
+    "outputDir": "jijzept_playground_launcher/labextension",
     "schemaDir": "schema"
   }
 }

@@ -1,5 +1,5 @@
 """
-jlab_enhanced_launcher setup
+jijzept_playground_launcher setup
 """
 import json
 import sys
@@ -10,14 +10,14 @@ import setuptools
 HERE = Path(__file__).parent.resolve()
 
 # The name of the project
-name="jlab_enhanced_launcher"
+name="jijzept_playground_launcher"
 
 lab_path = HERE / name.replace("-", "_") / "labextension"
 
 # Representative files that should exist after a successful build
 ensured_targets = [str(lab_path / "package.json"), str(lab_path / "static/style.js")]
 
-labext_name = "@jlab-enhanced/launcher"
+labext_name = "@jijzept-playground/launcher"
 
 data_files_spec = [
     (

@@ -382,6 +382,9 @@ export class Launcher extends VDomRenderer<LauncherModel> {
               map(
                 mostUsedItems.slice(0, this.model.nRecentCards),
                 (item: INewLauncher.IItemOptions) => {
+                  if (item.command === 'terminal:create-new') {
+                    return null;
+                  }
                   return Card(
                     KERNEL_CATEGORIES.indexOf(item.category || 'Other') > -1,
                     [item],
@@ -441,6 +444,9 @@ export class Launcher extends VDomRenderer<LauncherModel> {
                     .toLocaleLowerCase()
                     .indexOf(this._searchInput.toLocaleLowerCase()) === -1
                 ) {
+                  return null;
+                }
+                if (label === 'Terminal') {
                   return null;
                 }
 

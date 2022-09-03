@@ -1,13 +1,13 @@
 include LICENSE
 include README.md
 include pyproject.toml
-include jupyter-config/jlab_enhanced_launcher.json
+include jupyter-config/jijzept_playground_launcher.json
 
 include package.json
 include install.json
 include ts*.json
 
-graft jlab_enhanced_launcher/labextension
+graft jijzept_playground_launcher/labextension
 
 # Javascript files
 graft src
